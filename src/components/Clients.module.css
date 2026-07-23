@@ -1,0 +1,131 @@
+.clientsSection {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader {
+  max-width: 680px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark-navy);
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+/* Marquee Styles */
+.marqueeWrapper {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+}
+
+/* Masking effect to fade the marquee at the edges */
+.marqueeWrapper::before,
+.marqueeWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--light-bg) 0%, rgba(248, 250, 252, 0) 100%);
+}
+
+.marqueeWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--light-bg) 0%, rgba(248, 250, 252, 0) 100%);
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  gap: 32px;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.partnerLogoCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.partnerLogoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(27, 116, 228, 0.2);
+}
+
+.partnerName {
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: -0.5px;
+  transition: var(--transition-fast);
+}
+
+.partnerLogoCard:hover .partnerName {
+  color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+  
+  .marqueeWrapper::before,
+  .marqueeWrapper::after {
+    width: 250px;
+  }
+}

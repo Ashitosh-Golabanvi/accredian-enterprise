@@ -1,0 +1,217 @@
+.testimonialsSection {
+  padding: 80px 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 680px;
+  margin-bottom: 56px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark-navy);
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+/* Carousel Container */
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 8px; /* space for shadows */
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.quoteIcon {
+  color: var(--primary-blue-translucent);
+  margin-bottom: 24px;
+}
+
+.svgQuote {
+  width: 48px;
+  height: 48px;
+}
+
+.quoteText {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-navy);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blue-gradient);
+  color: var(--white);
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-navy);
+}
+
+.authorRole {
+  font-size: 13px;
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.companyName {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* Navigation Buttons */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  color: var(--dark-navy);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  z-index: 10;
+  transition: var(--transition-smooth);
+}
+
+.navBtn:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(27, 116, 228, 0.2);
+}
+
+.prevBtn {
+  left: 16px;
+}
+
+.nextBtn {
+  right: 16px;
+}
+
+.arrowIcon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Pagination Dots */
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  transition: var(--transition-smooth);
+}
+
+.dotActive {
+  background-color: var(--primary-blue);
+  width: 24px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+  
+  .quoteText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 32px 24px;
+  }
+  
+  .navBtn {
+    display: none;
+  }
+}
