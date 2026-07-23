@@ -7,8 +7,8 @@ It features modern UI/UX design (glassmorphic navbars, gradient effects, hoverin
 ---
 
 ## 🔗 Live Links & Submission Details
-* **Live Deployed Link (Vercel):** `[INSERT YOUR VERCEL DEPLOYMENT LINK HERE]` *(e.g. https://accredian-enterprise-clone.vercel.app)*
-* **GitHub Repository:** `[INSERT YOUR GITHUB REPOSITORY LINK HERE]` *(e.g. https://github.com/yourusername/accredian-enterprise)*
+* **Live Deployed Link (Vercel):** https://accredian-enterprise-two-tan.vercel.app/
+* **GitHub Repository:** https://github.com/Ashitosh-Golabanvi/accredian-enterprise
 
 ---
 
